@@ -3,7 +3,7 @@ import calendar
 def main():
     def payments(year, month):
         calendar_class = calendar.TextCalendar(calendar.MONDAY)
-        
+
         days_month = []
         for day_number in calendar_class.itermonthdays2(year, month):
             days_month.append(day_number)
@@ -21,7 +21,7 @@ def main():
         for day_number, day_name in list_day_number_plus_day_name:
             if day_name != "Tuesday":
                 days_worked_counter += 1
-        
+
         salary = days_worked_counter * 100
 
         return salary
