@@ -1,0 +1,1 @@
+My working day is $C100, and I work every day except on Thursdays. This script will determine how much I'll receive monthly.
