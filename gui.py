@@ -1,13 +1,12 @@
-import tkinter as tk
+from tkinter import *
 
-#Initialize app
-root = tk.Tk()
-root.title("Monthly Payment")
-root.eval("tk::PlaceWindow . center")
+root = Tk()
 
-frame1 = tk.Frame(root, width=500, height=600, bg="3d6466")
+def myClick():
+    myLabel = Label(root, text="Look! I clicked a Button!")
+    myLabel.pack()
 
+myButton = Button(root, text="Click Me!", command=myClick)
+myButton.pack()
 
-
-#Run app
 root.mainloop()
